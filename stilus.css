@@ -1,0 +1,17 @@
+.carousel,
+.carousel-inner {
+  height: 70vh;
+}
+
+.carousel-inner img {
+  height: 70vh;
+  object-fit: cover;
+}
+
+.kep-tarto {
+  width: 100%;
+}
+
+.kep-tarto img {
+  width: 100%;
+}
