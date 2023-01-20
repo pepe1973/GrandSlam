@@ -14,6 +14,11 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="shortcut icon" href="./kepek/atp_logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="./stilus.css" />
     <title>Grand Slam</title>
   </head>
@@ -113,12 +118,52 @@
       <div class="row border border-3">
         <h1 id="aus">Australian Open</h1>
         <div class="col-sm-6">
-          <div class="kep-tarto">
-            <img src="./kepek/aus.jpg" alt="aus" />
+          <div class="kep-tarto p-3">
+            <img src="./kepek/melbournepark.jpg" alt="aus" />
           </div>
         </div>
         <div class="col-sm-6">
-          <p>Valami szöveges tartalom versenyről.</p>
+          <table>
+            <tr>
+              <th>Helyszín:</th>
+              <td>Melbourne Park, Melbourne, Ausztrália</td>
+            </tr>
+            <tr>
+              <th>Alapítás éve:</th>
+              <td>1905 (110. verseny)</td>
+            </tr>
+            <tr>
+              <th>Aktuális sorsolás:</th>
+              <td>
+                <a href="https://ausopen.com/draws" target="_blank"
+                  >Férfi egyes</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <th>Aktuális férfi bajnok:</th>
+              <td>Rafael Nadal</td>
+            </tr>
+            <tr>
+              <th>Évek:</th>
+              <td>
+                <div class="beszur">
+                  <select name="aus_champ" id="aus_champ">
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                  </select>
+                  <button class="keres btn btn-primary">
+                    <span class="material-symbols-outlined"> search </span>
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr class="bajnok"></tr>
+          </table>
         </div>
       </div>
       <div class="row border border-3">
@@ -149,5 +194,6 @@
         </div>
       </div>
     </div>
+    <script src="./bajnok.js"></script>
   </body>
 </html>
